@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.apache.aries.jax.rs</groupId>
+    <artifactId>org.apache.aries.jax.rs-parent</artifactId>
+    <version>1.0.9-SNAPSHOT</version>
+
+    <name>Aries :: Jax RS :: Whiteboard :: Parent</name>
+
+    <packaging>pom</packaging>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <releases.repo.id>placeholder-releases.repo.id</releases.repo.id>
+        <releases.repo.url>placeholder-releases.repo.url</releases.repo.url>
+        <snapshots.repo.id>placeholder-snapshots.repo.id</snapshots.repo.id>
+        <snapshots.repo.url>placeholder-snapshots.repo.url</snapshots.repo.url>
+
+        <java.version>11</java.version>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+        <maven.compiler.release>${java.version}</maven.compiler.release>
+    </properties>
+
+    <distributionManagement>
+        <repository>
+            <id>${releases.repo.id}</id>
+            <url>${releases.repo.url}</url>
+        </repository>
+        <snapshotRepository>
+            <id>${snapshots.repo.id}</id>
+            <url>${snapshots.repo.url}</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <modules>
+        <module>aries-jax-rs-whiteboard</module>
+    </modules>
+
+</project>
