@@ -1,0 +1,4 @@
+[submodule "aries-jax-rs-whiteboard"]
+	path = aries-jax-rs-whiteboard
+	url = https://github.com/project-millipede/aries-jax-rs-whiteboard.git
+	branch = Generate-Karaf-Features-Programmatically
